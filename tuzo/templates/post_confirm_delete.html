@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load bootstrap3 %}
+{% block content %}
+<div class="container">
+  <div class="row">
+    <!-- Empty div -->
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+      <div class="panel panel-default">
+
+        <div class="panel-heading">
+          <h3 class="text-center">Awards Project Confirm Delete</h3>
+        </div>
+        <div class="panel-body">
+
+          <form method="POST" enctype="multipart/form-data">
+                      {% csrf_token %}
+                      <fieldset class="form-group">
+                        <h4>Are you sure you want to delete '{{ object.title }}'?</h4>
+                      </fieldset>
+                      <div class="form-group">
+                          <button class="btn btn-outline-danger" type="submit">Delete</button>
+                            <a class="btn btn-outline-secondrey" href="{% url 'post-detail' object.id %}">Delete</a>
+                      </div>
+                  </form>
+
+        </div>
+
+      </div>
+
+    </div>
+    <!-- empty div -->
+    <div class="col-md-3"></div>
+  </div>
+</div>
+
+{% endblock %}
