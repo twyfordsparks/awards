@@ -1,0 +1,42 @@
+{%extends 'base.html'%}
+
+{% block content %}
+{{block.super}}
+
+<br>
+<br>
+<br>
+
+
+<div class="container" >
+  <div class="row">
+
+    <div class="col-md-4">
+
+      <div class="w3-card" style="width:100%;">
+        <header class="w3-container w3-light-grey">
+          <a href="/profile"><img src="{{ user.profile.image.url }}" alt="Avatar" class="w3-left w3-circle" width="50px;" height="50px;"></a>
+          <a href="/profile" style="text-decoration:none;" ><h5 class="account-heading">{{ object.author }}</h5></a>
+          <hr>
+          <h4 class='article-title'> {{ object.title }} </h4>
+          <small class='text-muted'>{{ object.date_posted|date:"F d, Y" }}</small>
+        </header>
+        <hr>
+        <div class="w3-container">
+          <img src="{{object.image.url}}" style="width:100%">
+        </div>
+        <hr>
+        <footer class="w3-container">
+          <p class='article-content'>{{ object.content }}</p>
+        </footer>
+      </div>
+      <br><br><br><br>
+
+
+    </div>
+
+  </div>
+
+</div>
+
+{% endblock %}
