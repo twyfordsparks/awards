@@ -59,7 +59,7 @@ $ sudo apt-get install postgresql postgresql-contrib libpq-dev
 
 | Behaviour                                                                                    | Input                                       | Output                                                                                             |
 |----------------------------------------------------------------------------------------------|---------------------------------------------|----------------------------------------------------------------------------------------------------|
-| The Page loads the homepage                                                                  | On application load                         | Navigate to the home/index page displaying all the projects                                        |
+| The Page loads the homepage                                                                  | On application load                         | Navigate to the base page displaying all the projects                                        |
 | Navigate to signup page when SignUp is clicked on the navigation bar:                        | User successfully registers                 | User redirected to the login page                                                                  |
 | Navigate to the login page when Login is clicked on the navigation bar:                      | Click on  Login on the Navbar dropdown menu | User can view a specific image with all its details|
 |

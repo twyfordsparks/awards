@@ -2,6 +2,11 @@
 {% load bootstrap3 %}
 {% block content %}
 <div class="container">
+<div>
+  <div class="row">
+  <div class="column">data:image/png;base64,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 </div>
+  <img src="" alt="">
+  <div class="column"></div>
   <div class="row" style="margin-top:90px;">
     <!-- Empty div -->
     <div class="col-md-4"></div>
@@ -39,6 +44,21 @@
     <!-- empty div -->
     <div class="col-md-4"></div>
   </div>
+  <style>
+    .column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+  </style>
+</div>
+</div>
 </div>
 
 {% endblock %}

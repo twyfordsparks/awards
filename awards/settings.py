@@ -57,7 +57,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 INSTALLED_APPS = [
     'tuzo.apps.TuzoConfig',
     'bootstrap3',
-    # 'star_ratings',
+    'star_ratings',
     'crispy_forms',
     'django.contrib.admin',
     'django.contrib.auth',
